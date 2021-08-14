@@ -1,9 +1,9 @@
 ---
 sidebar_position: 5
-title: Chrome Profiles
 ---
 
-<!-- import Icon from "@material-ui/core/Icon"; -->
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserCircle, faChevronRight, faEllipsisV, faCog, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
 
 # Google Chrome Profiles
 
@@ -20,16 +20,16 @@ You may be caught by surprise if you switch to a different profile and notice yo
 ### Switch to another profile
 
 1. On your computer, open Chrome.
-2. At the top right, click `Profile` <Icon>account_circle</Icon>.
-3. Choose the profile you want to switch to.
+2. At the top right, click `Profile` <FontAwesomeIcon icon={faUserCircle} />.
+3. Choose the profile you want to switch to \.
 
 
 ### Change a name, photo, or color
 
 1. On your computer, open Chrome.
-2. At the top right, click `Profile` <Icon>account_circle</Icon>
-3. Next to "Other Profiles," select `Manage profiles`
-4. At the top right of the profile you want to edit, click `More`   `Edit`.
+2. At the top right, click `Profile` <FontAwesomeIcon icon={faUserCircle} />
+3. Next to "Other Profiles," select `Manage profiles` <FontAwesomeIcon icon={faCog} />
+4. At the top right of the profile you want to edit, click `More` <FontAwesomeIcon icon={faEllipsisV} /> <FontAwesomeIcon icon={faChevronRight} /> `Edit`.
 5. Enter a new name or choose a new photo or color theme. Changes are saved automatically.
 
 ### Remove a profile
@@ -37,11 +37,13 @@ You may be caught by surprise if you switch to a different profile and notice yo
 After you remove a profile from Chrome, the profile's bookmarks, history, passwords, and other settings are erased from the computer.
 
 1. On your computer, open Chrome.
-2. At the top right, click `Profile` .
-3. Select `Manage profiles` .
+2. At the top right, click `Profile` <FontAwesomeIcon icon={faUserCircle} />.
+3. Select `Manage profiles` <FontAwesomeIcon icon={faCog} />.
 4. Point to the profile you want to remove.
-5. At the top right of the profile, click `More` :arrow_right:   `Delete`.
+5. At the top right of the profile, click `More` <FontAwesomeIcon icon={faEllipsisV} /> <FontAwesomeIcon icon={faChevronRight} /> `Delete`.
 6. To confirm, click `Delete`.
 
 
-> https://blog.reecemath.com/material-ui-icons-to-docusaurus/
+## Conclusion
+
+<FontAwesomeIcon icon={faCheckCircle} color="green" /> That's all there is to it when it comes to profiles. Thank you for your attention and please let me know if you have any questions or run into any problems.
