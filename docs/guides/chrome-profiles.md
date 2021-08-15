@@ -1,5 +1,5 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 ---
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -21,7 +21,7 @@ You may be caught by surprise if you switch to a different profile and notice yo
 
 1. On your computer, open Chrome.
 2. At the top right, click `Profile` <FontAwesomeIcon icon={faUserCircle} />.
-3. Choose the profile you want to switch to \.
+3. Choose the profile you want to switch to.
 
 
 ### Change a name, photo, or color
