@@ -13,8 +13,8 @@ module.exports = {
   // stylesheets: [
   //   'https://fonts.googleapis.com/icon?family=Material+Icons',
   // ],
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'coretechonomy', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Core Techonomy',
@@ -62,7 +62,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/coretechonomy/blog/edit/main/',
+            'https://github.com/coretechonomy/docs/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
