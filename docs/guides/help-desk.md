@@ -28,7 +28,7 @@ export const desktop = {
 Remember to select `Continue with Google` when logging into the IT Help Desk.
 :::
 
-1. Click <Link to={ithelpdesk} target="_blank">here</Link> to head to the <Link to={ithelpdesk} target="_blank">IT Help Desk</Link> (or double-click the IT Help Desk icon on your desktop).
+1. Click <Link to={ithelpdesk} target="_blank">here</Link> to head to the <Link to={ithelpdesk} target="_blank">IT Help Desk</Link> (or double-click the `IT Help Desk` icon on your desktop).
 
     <div style={desktop}>
         <h3 style={{color: "white"}}>IT Support</h3><br />
