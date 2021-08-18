@@ -30,7 +30,7 @@ Remember to select `Continue with Google` when logging into the IT Help Desk.
 
     ![Google Sign-in](./assets/google-sign-in.png)
 
-3. Select or input *your* Grosso Orthodontics email address and press `Next`
+3. Select or input *your* **Grosso Orthodontics** email address and press `Next`
 
     ![Sign-in](./assets/sign-in.png)
 
