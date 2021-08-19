@@ -6,7 +6,7 @@ module.exports = {
   title: 'Core Techonomy, LLC',
   tagline: 'At Core Techonomy, our focus is how technology enables your business.',
   url: 'https://coretechonomy.com',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/coretechonomy.ico',
