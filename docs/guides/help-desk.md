@@ -15,7 +15,7 @@ export const ithelpdesk = {
 export const desktop = {
     borderRadius: "8px",
     padding: "20px",
-    width: "320px",
+    width: "330px",
     height: "350px",
     textAlign: "center",
     background: "#000033",
