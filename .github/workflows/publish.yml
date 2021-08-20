@@ -21,6 +21,8 @@ jobs:
         node-version: 14.x
 
     - run: |
+        git clone --depth=1 --single-branch --branch gh-pages https://git@github.com/coretechonomy/docs.git gh-pages
+
         if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
         elif [ -e package-lock.json ]; then
@@ -30,15 +32,13 @@ jobs:
         fi
 
         yarn build
-        cd build/
+        rsync -a build/ gh-pages/
+        cd gh-pages/
         echo "docs.coretechonomy.com" > CNAME
 
-        git init
         git config --global user.name "Erik Thomsen"
         git config --global user.email "ethomsen86@gmail.com"
 
-        git remote add origin https://etho201:${{ secrets.GH_PAT }}@github.com/coretechonomy/docs.git
-        git checkout -b gh-pages
         git add -A
         git commit -m "Deploy website - based on $GITHUB_SHA"
-        git push -f origin gh-pages
+        git push -f
