@@ -33,6 +33,7 @@ jobs:
         fi
 
         yarn build
+        which rsync
         rsync -a build/ gh-pages/
         cd gh-pages/
         echo "docs.coretechonomy.com" > CNAME
