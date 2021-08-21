@@ -31,11 +31,12 @@ Remember to select `Continue with Google` when logging into the IT Help Desk.
 1. Click <Link to={ithelpdesk} target="_blank">here</Link> to head to the <Link to={ithelpdesk} target="_blank">IT Help Desk</Link> (or double-click the `IT Help Desk` icon on your desktop).
 
     <div style={desktop}>
-        <h3 style={{color: "white"}}>IT Support</h3><br />
+        <h3 style={{color: "white"}}>IT Support</h3>
+        <br />
         <Link to={ithelpdesk} target="_blank"><img src={require('./assets/help-desk-shortcut.png').default}  alt="IT Help Desk"/></Link>
         <br /><br /><br />
-        <p style={{color: "white", fontSize: ".95em"}}>Supported by Core Techonomy, LLC</p>
-        <p style={{color: "white", fontSize: ".71em"}}>Double-click the IT Help Desk icon to create a ticket.<br />For immediate assistance, call 843-642-8322.</p>
+        <p style={{color: "white", fontSize: ".96em"}}>Supported by Core Techonomy, LLC</p>
+        <p style={{color: "white", fontSize: ".70em"}}>Double-click the IT Help Desk icon to create a ticket.<br />For immediate assistance, call 843-642-8322.</p>
     </div>
 
 <br />
