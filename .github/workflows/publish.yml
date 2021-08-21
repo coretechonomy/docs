@@ -32,6 +32,7 @@ jobs:
 
         yarn build
         rsync -a build/ gh-pages/
+
         cd gh-pages/
         echo "docs.coretechonomy.com" > CNAME
 
@@ -40,4 +41,4 @@ jobs:
 
         git add -A
         git commit -m "Deploy website - based on $GITHUB_SHA"
-        git push -f
+        git push
