@@ -19,8 +19,7 @@ jobs:
         node-version: 14.x
 
     - run: |
-        rm -rf .git/
-        git clone --depth=1 --single-branch --branch gh-pages https://${{ secrets.GH_PAT }}@github.com/coretechonomy/docs.git gh-pages
+        git worktree add gh-pages gh-pages
 
         if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
