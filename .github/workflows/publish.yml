@@ -29,6 +29,8 @@ jobs:
         fi
 
         yarn build && cd build/
+        
+        echo "docs.coretechonomy.com" > CNAME
 
         git init
         git config --global user.name "Erik Thomsen"
