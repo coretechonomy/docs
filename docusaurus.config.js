@@ -5,7 +5,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 module.exports = {
   title: 'Core Techonomy, LLC',
   tagline: 'At Core Techonomy, our focus is how technology enables your business.',
-  url: 'https://coretechonomy.com',
+  url: 'https://docs.coretechonomy.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -35,6 +35,21 @@ module.exports = {
           position: 'right',
         },
       ],
+    },
+    algolia: {
+      apiKey: '406ff157c4ff357db7481338604f745f',
+      indexName: 'coretechonomy-docs',
+
+      // Optional: see doc section below
+      contextualSearch: true,
+
+      // Optional: see doc section below
+      appId: 'SM9YS96ZVC',
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
     },
     footer: {
       style: 'dark',
