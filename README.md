@@ -4,6 +4,8 @@ Website is hosted at: https://docs.coretechonomy.com/
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+---
+
 ## Installation
 
 ```console
@@ -33,6 +35,17 @@ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+---
+
+# Algolia DocSearch
+## Run the crawl from the Docker image
+
+You can run a crawl from the packaged Docker image to crawl your website.
+
+```bash
+podman run -it --env-file=.env -e "CONFIG=$(cat docsearch-config.json | jq -r tostring)" algolia/docsearch-scraper
+```
 
 ---
 
