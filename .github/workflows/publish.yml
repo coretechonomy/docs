@@ -47,4 +47,7 @@ jobs:
 
     - name: Crawl website to update Algolia DocSearch
       uses: docker://algolia/docsearch-scraper
-      run: -it --env-file=<(echo "APPLICATION_ID=${{ secrets.ALGOLIA_APPLICATION_ID }}\nAPI_KEY=${{ secrets.ALGOLIA_API_KEY }}") -e "CONFIG=$(cat docsearch-config.json | jq -r tostring)"
+      env:
+        APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
+        API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+        CONFIG: $(cat docsearch-config.json | jq -r tostring)
