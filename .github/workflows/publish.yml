@@ -46,8 +46,4 @@ jobs:
       run: sudo apt-get install -y jq
 
     - name: Crawl website to update Algolia DocSearch
-      run: docker run algolia/docsearch-scraper
-      env:
-        APPLICATION_ID: ${{ secrets.ALGOLIA_APPLICATION_ID }}
-        API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-        CONFIG: "$(cat docsearch-config.json | jq -r tostring)"
+      run: docker run -e "APPLICATION_ID=${{ secrets.ALGOLIA_APPLICATION_ID }}" -e "API_KEY=${{ secrets.ALGOLIA_API_KEY }}" -e "CONFIG=$(cat docsearch-config.json | jq -r tostring)" algolia/docsearch-scraper
