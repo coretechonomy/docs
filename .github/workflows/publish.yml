@@ -42,8 +42,12 @@ jobs:
         git commit -m "Deploy website - based on $GITHUB_SHA"
         git push -f origin gh-pages
 
-    - name: Install required packages
-      run: sudo apt-get install -y jq
+    - name: Crawl website to update Algolia DocSearch Indices
+      run: |
+        sudo apt-get install -y jq
 
-    - name: Crawl website to update Algolia DocSearch
-      run: docker run -e "APPLICATION_ID=${{ secrets.ALGOLIA_APPLICATION_ID }}" -e "API_KEY=${{ secrets.ALGOLIA_API_KEY }}" -e "CONFIG=$(cat docsearch-config.json | jq -r tostring)" algolia/docsearch-scraper
+        docker run \
+          -e "CONFIG=$(cat docsearch-config.json | jq -r tostring)" \
+          -e "APPLICATION_ID=${{ secrets.ALGOLIA_APPLICATION_ID }}" \
+          -e "API_KEY=${{ secrets.ALGOLIA_API_KEY }}" \
+          algolia/docsearch-scraper
