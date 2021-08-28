@@ -41,3 +41,10 @@ jobs:
         git add -A
         git commit -m "Deploy website - based on $GITHUB_SHA"
         git push -f origin gh-pages
+
+    - name: Install required packages
+      run: sudo apt-get install -y jq
+
+    - name: Crawl website to update Algolia DocSearch
+      uses: docker://algolia/docsearch-scraper
+      run: -it --env-file=<(echo "APPLICATION_ID=${{ secrets.ALGOLIA_APPLICATION_ID }}\nAPI_KEY=${{ secrets.ALGOLIA_API_KEY }}") -e "CONFIG=$(cat docsearch-config.json | jq -r tostring)"
