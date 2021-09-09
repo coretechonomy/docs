@@ -30,7 +30,7 @@ module.exports = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/coretechonomy/docs',
           label: 'GitHub',
           position: 'right',
         },
