@@ -1,6 +1,6 @@
 # Website
 
-Website is hosted at: https://docs.coretechonomy.com/
+Website is hosted at: https://docs.coretechonomy.com/.
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
