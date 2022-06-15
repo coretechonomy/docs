@@ -38,6 +38,22 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 ---
 
+## Podman
+
+Build the docs with:
+
+```bash
+podman run --rm -v $(pwd):/app --workdir /app --entrypoint npm node run build
+```
+
+Launch a local web server to preview the docs at http://localhost:
+
+```bash
+podman run --rm --name ol8cookbook -p 80:80 -v ${PWD}/build:/usr/share/nginx/html:ro -d nginx
+```
+
+---
+
 # Algolia DocSearch
 ## Run the crawl from the Docker image
 
