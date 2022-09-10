@@ -37,17 +37,22 @@ module.exports = {
       ],
     },
     algolia: {
-      apiKey: '406ff157c4ff357db7481338604f745f',
-      indexName: 'coretechonomy-docs',
+      // The application ID provided by Algolia
+      appId: '6F81LOD5IN',
+
+      // Public API key: it is safe to commit it
+      apiKey: 'a9cfb0574685ab9d1c45c5d9e3baa2b1',
+
+      indexName: 'docs',
 
       // Optional: see doc section below
       contextualSearch: true,
 
-      // Optional: see doc section below
-      appId: 'SM9YS96ZVC',
-
       // Optional: Algolia search parameters
       searchParameters: {},
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: 'search',
 
       //... other Algolia params
     },
