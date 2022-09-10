@@ -43,7 +43,7 @@ module.exports = {
       // Public API key: it is safe to commit it
       apiKey: 'a9cfb0574685ab9d1c45c5d9e3baa2b1',
 
-      indexName: 'docs',
+      indexName: 'coretechonomy-docs',
 
       // Optional: see doc section below
       contextualSearch: true,
